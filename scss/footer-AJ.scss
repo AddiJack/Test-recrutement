@@ -1,0 +1,33 @@
+/* Footer */
+
+/* 
+Création de variables SASS afin de récupérer les valeurs identiques en fonctions des éléments qui l'étaient
+Certaines parties étaient totalement identiques donc je les ai regroupé afin d'avoir un code plus lisible
+*/
+$shadowText: 0.55rem 0.55rem #15FFF5;
+$margin05: 0.5rem;
+$margin1: 1rem;
+$fontSize: 1.5rem;
+
+#footer {
+    text-shadow: 0.55rem 0.55rem #FFFFFF;
+  
+    & .form__footer {
+      margin: $margin1;
+      text-shadow: $shadowText;
+    }
+  
+    & .cgv__footer,
+    & .cgu__footer {
+      margin: $margin05;
+      text-shadow: $shadowText;
+    }
+  
+    & .cgv__footer .button {
+      margin: $margin1;
+      padding: $margin1;
+      font-size: $fontSize;
+    }
+  }
+  
+  
